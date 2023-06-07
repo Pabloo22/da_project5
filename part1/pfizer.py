@@ -280,7 +280,7 @@ def solve_problem(epsilon, verbose=False):
                                                               CURRENT_ASSIGNMENT,
                                                               epsilon=epsilon,
                                                               verbose=verbose)
-    print_solution(optimized_assignments, f1_value, f2_value)
+    print_solution(optimized_assignments, f1_value, f2_value / 2)
 
 
 def check_solution(optimized_assignments):
@@ -322,4 +322,5 @@ def main(n_epsilons=10):
 
 if __name__ == "__main__":
     # print_current_labor_intensity()
-    main(n_epsilons=500)
+    # main(n_epsilons=500)
+    solve_problem(epsilon=2, verbose=False)
